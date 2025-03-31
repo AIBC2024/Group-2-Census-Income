@@ -41,8 +41,8 @@ The team chose to analyze adult census income data consisting approximately 48K 
   | ✔ (77% vs 76%)    | Balanced Accuracy          |                   |
   | ✔ (68% vs 66%     | F1 Score                   |                   |
   | ✔ (92% vs 87%)    | ROC AUC                    |                   |
-  |                   | Precision for >$50K        |  ✔ (76% vs 70%)   |
-  |                   | Overall classfc. accuracy  |  ✔ (85% vs 83%)   |
+  |                   | Precision for >$50K        |  ✔ (77% vs 70%)   |
+  |                   | Overall classfc. accuracy  |  ✔ (86% vs 83%)   |
   | WINNER            | Conclusion                 |  Runner up        |
   
   
