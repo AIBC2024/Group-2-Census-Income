@@ -21,18 +21,31 @@ The team chose to analyze adult census income data consisting approximately 48K 
 - Perform train, test, split for supervised ML model: GradientBoostingClassifier, ExtraTreesClassifier, RandomForestClassifier, DecisionTreeClassifier, KNeighborsClassifier, AdaBoostClassifier, LogisiticRegression. The end result shows that **GradientBoostingClassifier** and **XGBoost** are the most 2 optimal models.
 - Perform Hyperparameter Tuning for the lowest 2 models: KNeighbors and LogisticRegression, check ROC AUC Score. They don't perform any better.
 - Perform Feature Importance analysis: the end result shows the order of: (1) marital-status, (2) assets, (3) education, (4) occupation, (5) age, (6) hours per week, (7) sex, (8) workclass, and (9) race.
-- Perform Learning Curves to check overfitting.
+- Perform Learning Curves to check overfitting. End results for both models mentioned above are great, no overfitting.
 - Perform SMOTE resample analysis at GradientBoostingClassifier.
 - Inspect Model Coefficients. The end results show the top 4 most influencing features are: (1) marital-status, (2) occupation, (3) education, and (4) hours per week. 
 - Perform Correlation Matrix analysis: similarly as Model Coefficients and Feature Importance analysis, the top 3 most influencing features are: (1) marital-status, (2) education, (3) age
 - Perform Granular Correlation for impactful factors in determining whether income exceeds $50k/year based on the 1994 census database: marital-status, education, age, race
 
 ## File(s) to Run
-- [Exploration Exchange Rate](https://github.com/AIBC2024/Group-2-Census-Income/blob/main/Group_2_Census_Income_ML_Model.ipynb)
+- [Exploration 1994 Adult Census Income Jupyter Notebook file](https://github.com/AIBC2024/Group-2-Census-Income/blob/main/Group_2_Census_Income_ML_Model.ipynb)
 
 ## Summary of the Final Analysis
 - Higher income ($50K/year) are influenced by some factors such as: marital status (married has higher income), type of education (having a bachelor degree+), occupation (white collar has higher income).
-- Top best performing models are: GradientBoostingClassifier and XGBoost with train and test models are in the mid 80%, ROC/AUC in upper 80%/low90%, no overfitting/underfitting
+- Top best performing models are: GradientBoostingClassifier and XGBoost with train and test models are in the mid 80%, ROC/AUC in upper 80%/low90%, no overfitting/underfitting.
+
+  
+  | XG Boost          |             vs.            | Gradient Boosting |
+  |-------------------|----------------------------|-------------------|
+  | ✔ (86% vs 85%)    | Train and Test Accuracy    |                   |
+  | ✔ (77% vs 76%)    | Balanced Accuracy          |                   |
+  | ✔ (68% vs 66%     | F1 Score                   |                   |
+  | ✔ (92% vs 87%)    | ROC AUC                    |                   |
+  |                   | Precision for >$50K        |  ✔ (76% vs 70%)   |
+  |                   | Overall classfc. accuracy  |  ✔ (85% vs 83%)   |
+  | WINNER            | Conclusion                 |  Runner up        |
+  
+  
 
 ## Team Members
 1. [Ingrid Blankevoort](https://github.com/AIBC2024)
